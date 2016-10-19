@@ -7,7 +7,7 @@ int main(void)
 
   for (c = 0; c < sizeof(holberton); c++)
  {
-   putchar(holberton[c]);
+   _putchar(holberton[c]);
  }
 putchar('\n');
 return (0);
