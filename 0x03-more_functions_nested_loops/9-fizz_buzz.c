@@ -12,7 +12,15 @@ int main(void)
 		if (h % 3 == 0)
 			printf("Fizz ");
 		else if (h % 5 == 0)
-			printf("Buzz ");
+		{
+			if (h == 100)
+			{
+				printf("Buzz");
+				printf("\n");
+			}
+			else
+				printf("Buzz ");
+		}
 		else if (h % 3 && h % 5 == 0)
 			printf("FizzBuzz ");
 		else
