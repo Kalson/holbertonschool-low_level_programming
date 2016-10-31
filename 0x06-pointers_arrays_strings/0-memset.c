@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * _memset - check the code for Holberton School students.
  * @s: parameter for the array
  * @b: parameter for the values in the array
  * @n: parameter for the number of times to print the new values
