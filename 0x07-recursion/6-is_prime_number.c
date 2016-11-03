@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * is_prime_number - blank
- * @n: number
- * Return: blank
+ * is_prime_number - func that returns 1 if a num is a prime num, 0 otherwise
+ * @n: number for input
+ * Return: 0
  */
 int is_prime_number(int n)
 {
@@ -12,9 +12,9 @@ int is_prime_number(int n)
 /**
  *  helper_prime - blank
  * @n: checkl
- * @i: incremenbt
+ * @i: for the increment
  * @limit: stop
- * Return: blank
+ * Return: 0
  */
 
 int helper_prime(int n, int i, int limit)
@@ -26,4 +26,3 @@ int helper_prime(int n, int i, int limit)
 	else
 		return (1);
 }
-df
