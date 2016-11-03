@@ -1,11 +1,9 @@
 #include "holberton.h"
-
 /**
  * is_prime_number - blank
  * @n: number
  * Return: blank
  */
-
 int is_prime_number(int n)
 {
 	return (helper_prime(n, 2, n / 2));
@@ -28,3 +26,4 @@ int helper_prime(int n, int i, int limit)
 	else
 		return (1);
 }
+df
