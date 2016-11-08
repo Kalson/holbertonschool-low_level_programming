@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 /**
  * main - program that prints its name, followed by a new line
  * @argc: argument that counts argument input
@@ -9,23 +10,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int sum, val, i;
 
 	sum = 0;
 	if (argc < 1)
 		printf("%d\n", 0);
-	else
+	while (argc-- && argc > 0)
 	{
-		for (i = 0; i < argc; i++)
+		for (i = 0; argv[argc][i] != '\0'; i++)
 		{
-			if (!(isdigit(atoi(argv[i]))))
+
+			if (!(isdigit(argv[argc][i])))
 			{
 				printf("Error\n");
 				return (1);
 			}
-			sum = sum + atoi(argv[i]);
 		}
-		printf("%d\n", sum);
+		val = atoi(argv[argc]);
+		sum += val;
 	}
+	printf("%d\n", sum);
 	return (0);
 }
