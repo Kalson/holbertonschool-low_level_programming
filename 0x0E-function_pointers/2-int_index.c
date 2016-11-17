@@ -1,9 +1,10 @@
 #include "function_pointers.h"
 
 /**
- * is_98 - check if a number is equal to 98
- * @elem: the integer to check
- *
+ * int_index - Write a function that searches for an integer
+ * @array: the array to check
+ * @size: parameter for size
+ * @cmp: paratmeter for cmp
  * Return: 0 if false, something else otherwise.
  */
 int int_index(int *array, int size, int (*cmp)(int))
@@ -19,7 +20,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		if (cmp(array[i]))
 		{
-			return i;
+			return (i);
 		}
 	}
 	return (-1);
