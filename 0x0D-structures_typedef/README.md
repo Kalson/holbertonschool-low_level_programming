@@ -1,79 +1,10 @@
-Define a new type struct dog with the following elements:
-
+# C - Structures, typedef
+* 0 - Define a new type struct dog with the following elements:
 name, type = char *
 age, type = float
 owner, type = char *
-julien@ubuntu:~/0x0d. structures, typedef$ cat 0-main.c
-#include <stdio.h>
-#include "dog.h"
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    struct dog my_dog;
-
-    my_dog.name = "Django";
-    my_dog.age = 3.5;
-    my_dog.owner = "Jay";
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-    return (0);
-}
-julien@ubuntu:~/0x0d. structures, typedef$ make
-gcc -Wall -pedantic -Werror -Wextra 0-main.c -o a
-julien@ubuntu:~/0x0d. structures, typedef$ ./a 
-My name is Django, and I am 3.5 :) - Woof!
-julien@ubuntu:~/0x0d. structures, typedef$ 
-Repo:
-
-GitHub repository: holbertonschool-low_level_programming
-Directory: 0x0D-structures_typedef
-File: dog.h
-Check your code? Ask a new correction
-  Done?  
-Who is done?   Help!
-1. A dog is the only thing on earth that loves you more than you love yourself mandatory
-
-Score: 85.71% (completion score: 85.71%)
-Write a function that initialize a variable of type struct dog
-
-Prototype: void init_dog(struct dog *d, char *name, float age, char *owner);
-julien@ubuntu:~/0x0d. structures, typedef$ cat 1-main.c
-#include <stdio.h>
-#include "dog.h"
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    struct dog my_dog;
-
-    init_dog(&my_dog, "Django", 3.5, "Jay");
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-    return (0);
-}
-julien@ubuntu:~/0x0d. structures, typedef$ gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-init_dog.c -o b
-julien@ubuntu:~/0x0d. structures, typedef$ ./b 
-My name is Django, and I am 3.5 :) - Woof!
-julien@ubuntu:~/0x0d. structures, typedef$ 
-Repo:
-
-GitHub repository: holbertonschool-low_level_programming
-Directory: 0x0D-structures_typedef
-File: 1-init_dog.c
-Check your code? Ask a new correction
-  Done?  
-Who is done?   Help!
-2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad mandatory
-
-Score: 0.00% (completion score: 0.00%)
-Write a function that prints a struct dog
+* 1 - Write a function that initialize a variable of type struct dog
+* 2 - Write a function that prints a struct dog
 
 Prototype: void print_dog(struct dog *d);
 Format: see example bellow
